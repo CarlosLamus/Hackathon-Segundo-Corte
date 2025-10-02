@@ -1,0 +1,16 @@
+[
+  {
+    "id": "6be78866-d51d-4917-bcaf-21c05ba07ff7",
+    "username": "admin",
+    "passwordHash": "$2a$10$4mqTYV8QGUqGaBrVDb8h6eMNUm8XjZyo/FgDQMiY4hHJAaEiXJpMO",
+    "role": "admin",
+    "createdAt": "2025-10-02T00:08:17.692Z"
+  },
+  {
+    "id": "b42fbf42-6c51-4f97-9674-e0ddedc0ff91",
+    "username": "holaa",
+    "passwordHash": "$2a$10$CrgDDsYXtNjrVGhXKVa0xe1khaaOZ7Hh2oFtDiDpbc6wvwfZgi.Pm",
+    "role": "user",
+    "createdAt": "2025-10-02T00:10:39.062Z"
+  }
+]

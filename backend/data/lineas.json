@@ -1,0 +1,606 @@
+[
+  {
+    "id": "1",
+    "slug": "ciberseguridad",
+    "nombre": "Ciberseguridad",
+    "area": "Ciberseguridad",
+    "nivel": "Intermedio",
+    "descripcion": "Defensa, ofensiva ética, GRC y seguridad en la nube.",
+    "contenidos": [
+      "OWASP Top 10",
+      "Pentesting",
+      "Seguridad en Redes",
+      "IAM & Cloud Security",
+      "Respuesta a Incidentes",
+      "Forense básica"
+    ],
+    "contentDetails": [
+      {
+        "title": "OWASP Top 10",
+        "desc": "Repaso de A01–A10 con riesgos, causas raíz y mitigaciones defensivas como validación de entradas, encoding contextual, autenticación fuerte, gestión segura de dependencias y registro/monitoreo de eventos. Incluye objetivos de aprendizaje, checklist de verificación, y una actividad guiada con criterios de evaluación rubricados."
+      },
+      {
+        "title": "Pentesting",
+        "desc": "Metodología práctica basada en estándares (PTES/OSSTMM): reconocimiento activo/pasivo, enumeración, explotación controlada, post‑explotación y redacción de hallazgos con evidencia reproducible. Incluye objetivos de aprendizaje, checklist de verificación, y una actividad guiada con criterios de evaluación rubricados."
+      },
+      {
+        "title": "Seguridad en Redes",
+        "desc": "Arquitectura segmentada por zonas de confianza, VLANs, ACLs, NAT y VPNs; protección con WAF/IDS/IPS; hardening de routers/switches y Wi‑Fi enterprise con 802.1X + RADIUS. Incluye objetivos de aprendizaje, checklist de verificación, y una actividad guiada con criterios de evaluación rubricados."
+      },
+      {
+        "title": "IAM & Cloud Security",
+        "desc": "Gobierno de identidades con privilegio mínimo y separación de funciones, MFA obligatorio, rotación de credenciales, cifrado en tránsito/descanso, auditoría continua y cumplimiento regulatorio. Incluye objetivos de aprendizaje, checklist de verificación, y una actividad guiada con criterios de evaluación rubricados."
+      },
+      {
+        "title": "Respuesta a Incidentes",
+        "desc": "Marco NIST: preparación, detección, análisis, contención, erradicación y recuperación, seguido de lecciones aprendidas; uso de IOC/IOA y playbooks para acelerar la contención. Incluye objetivos de aprendizaje, checklist de verificación, y una actividad guiada con criterios de evaluación rubricados."
+      },
+      {
+        "title": "Forense básica",
+        "desc": "Cadena de custodia, adquisición segura, análisis de memoria/disco y correlación de logs para reconstrucción de la línea de tiempo de un incidente, con reporte técnico claro. Incluye objetivos de aprendizaje, checklist de verificación, y una actividad guiada con criterios de evaluación rubricados."
+      }
+    ],
+    "habilidades": [
+      "Analizar vulnerabilidades",
+      "Configurar WAF/IDS",
+      "Modelar amenazas",
+      "Responder a incidentes",
+      "Políticas GRC"
+    ],
+    "recursos": [
+      {
+        "titulo": "OWASP Top 10",
+        "url": "https://owasp.org/www-project-top-ten/"
+      },
+      {
+        "titulo": "MITRE ATT&CK",
+        "url": "https://attack.mitre.org/"
+      }
+    ],
+    "modules": [
+      {
+        "titulo": "OWASP Top 10 2021",
+        "objetivos": [
+          "Comprender cada categoría",
+          "Aplicar pruebas básicas (ZAP/Burp)"
+        ],
+        "leccion": "Repaso de A01 a A10 con ejemplos de explotación y mitigación.",
+        "ejemplosCodigo": [
+          {
+            "lenguaje": "javascript",
+            "codigo": "fetch('/api/login',{method:'POST',body:JSON.stringify({u,p})}) // validar inputs / sanitizar"
+          }
+        ],
+        "practicas": [
+          "Levanta DVWA/OWASP Juice Shop",
+          "Haz un reporte de 5 hallazgos reproducibles"
+        ]
+      },
+      {
+        "titulo": "Seguridad en Redes",
+        "objetivos": [
+          "Segmentación",
+          "ACLs",
+          "WLC/802.1X básico"
+        ],
+        "leccion": "VLANs, ACLs de capa 3, Wi-Fi Enterprise con RADIUS.",
+        "ejemplosCodigo": [
+          {
+            "lenguaje": "bash",
+            "codigo": "iptables -A INPUT -p tcp --dport 443 -j ACCEPT"
+          }
+        ],
+        "practicas": [
+          "Simula VLANs y ACLs en Packet Tracer",
+          "Documenta el diagrama L2/L3"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "prompt": "¿Cuál es la mejor mitigación para XSS reflejado?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cifrar la base de datos",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Escapar/encodear salida en el contexto correcto",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Usar más RAM en el servidor",
+            "correct": false
+          }
+        ],
+        "explanation": "La salida debe encodearse en el contexto adecuado (HTML, atributo, JS, URL)."
+      },
+      {
+        "id": "q2",
+        "prompt": "¿Qué describe mejor MITRE ATT&CK?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un estándar de cifrado simétrico",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Un marco de tácticas, técnicas y procedimientos adversarios",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Una norma de privacidad",
+            "correct": false
+          }
+        ],
+        "explanation": "ATT&CK cataloga TTPs de adversarios para mapear defensas."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "ia-ciencia-datos",
+    "nombre": "IA y Ciencia de Datos",
+    "area": "IA y Ciencia de Datos",
+    "nivel": "Intermedio",
+    "descripcion": "Aprendizaje automático, MLOps y visualización.",
+    "contenidos": [
+      "Regresión/Clasificación",
+      "Redes neuronales",
+      "MLOps",
+      "Feature engineering",
+      "Ética de IA"
+    ],
+    "contentDetails": [
+      {
+        "title": "Regresión/Clasificación",
+        "desc": "Problemas supervisados con selección de variables, métricas (MSE, F1, ROC‑AUC) y tratamiento del overfitting mediante regularización y validación cruzada."
+      },
+      {
+        "title": "Redes neuronales",
+        "desc": "Perceptrón y backpropagation, arquitecturas (MLP/CNN/RNN), inicialización, normalización y tuning sistemático de hiperparámetros."
+      },
+      {
+        "title": "MLOps",
+        "desc": "Versionado de datos/modelos, pipelines reproducibles, despliegue continuo, canary y monitoreo de drift con alertas."
+      },
+      {
+        "title": "Feature engineering",
+        "desc": "Limpieza y enriquecimiento, encoding correcto, escalado, discretización y selección de variables informativas."
+      },
+      {
+        "title": "Ética de IA",
+        "desc": "Sesgo y fairness, explicabilidad, privacidad diferencial, seguridad del modelo y cumplimiento normativo."
+      }
+    ],
+    "habilidades": [
+      "Entrenar modelos",
+      "Evaluar métricas",
+      "Desplegar modelos",
+      "ETL/Datos"
+    ],
+    "recursos": [
+      {
+        "titulo": "Scikit-learn Docs",
+        "url": "https://scikit-learn.org/"
+      }
+    ],
+    "modules": [
+      {
+        "titulo": "Métricas de clasificación",
+        "objetivos": [
+          "Precisión/Recall/ROC-AUC",
+          "Curvas y trade-offs"
+        ],
+        "leccion": "Cómo elegir métricas según el caso de uso.",
+        "ejemplosCodigo": [
+          {
+            "lenguaje": "python",
+            "codigo": "from sklearn.metrics import classification_report\nprint(classification_report(y_true,y_pred))"
+          }
+        ],
+        "practicas": [
+          "Comparar 3 modelos con validación cruzada",
+          "Justificar la métrica elegida"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "prompt": "¿Qué métrica usarías con clases desbalanceadas?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Accuracy",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "F1 o ROC-AUC",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Tiempo de entrenamiento",
+            "correct": false
+          }
+        ],
+        "explanation": "F1 y ROC-AUC son más robustas ante desbalance."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "redes",
+    "nombre": "Redes",
+    "area": "Redes",
+    "nivel": "Básico",
+    "descripcion": "Diseño, routing, switching, VLANs y seguridad L2/L3.",
+    "contenidos": [
+      "VLSM",
+      "OSPF",
+      "NAT",
+      "WLC & AP",
+      "ACLs"
+    ],
+    "contentDetails": [
+      {
+        "title": "VLSM",
+        "desc": "Asignación eficiente de subredes; reserva de direcciones, sumarización y buenas prácticas de documentación."
+      },
+      {
+        "title": "OSPF",
+        "desc": "Protocolo link‑state con áreas, costos, DR/BDR; convergencia, estabilidad y troubleshooting."
+      },
+      {
+        "title": "NAT",
+        "desc": "Traducción de direcciones (estática/dinámica) y PAT; implicaciones de seguridad y rendimiento."
+      },
+      {
+        "title": "WLC & AP",
+        "desc": "Controlador inalámbrico, SSIDs múltiples, seguridad corporativa, roaming asistido y QoS por aplicación."
+      },
+      {
+        "title": "ACLs",
+        "desc": "Listas de control de acceso L3/L4 con orden, máscara wildcard y verificación de reglas."
+      }
+    ],
+    "habilidades": [
+      "Subnetting",
+      "Configurar VLANs",
+      "ACLs",
+      "Wi-Fi Enterprise"
+    ],
+    "recursos": [
+      {
+        "titulo": "Cisco Packet Tracer",
+        "url": "https://www.netacad.com/courses/packet-tracer"
+      }
+    ],
+    "modules": [
+      {
+        "titulo": "VLSM práctico",
+        "objetivos": [
+          "Plan de direccionamiento"
+        ],
+        "leccion": "Cómo calcular subredes con VLSM.",
+        "ejemplosCodigo": [
+          {
+            "lenguaje": "text",
+            "codigo": "/26 para 62 hosts, /30 para enlaces P2P"
+          }
+        ],
+        "practicas": [
+          "Diseña un plan con gateway reservado"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "prompt": "¿Qué máscara soporta ~62 hosts?",
+        "options": [
+          {
+            "id": "a",
+            "text": "/24",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "/26",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "/30",
+            "correct": false
+          }
+        ],
+        "explanation": "/26 provee 64 direcciones; ~62 hosts útiles."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "arquitectura-software",
+    "nombre": "Arquitectura de Software",
+    "area": "Arquitectura de Software",
+    "nivel": "Avanzado",
+    "descripcion": "Diseño de sistemas, patrones, escalabilidad y resiliencia.",
+    "contenidos": [
+      "DDD",
+      "CQRS/Event Sourcing",
+      "Microservicios",
+      "Observabilidad",
+      "Sagas"
+    ],
+    "contentDetails": [
+      {
+        "title": "DDD",
+        "desc": "Ubiquitous language, bounded contexts, agregados y anti‑corrupción entre contextos."
+      },
+      {
+        "title": "CQRS/Event Sourcing",
+        "desc": "Separación lectura/escritura, proyecciones y almacenamiento de eventos para auditoría temporal."
+      },
+      {
+        "title": "Microservicios",
+        "desc": "Desacoplamiento con contratos claros, resiliencia y despliegue independiente por servicio."
+      },
+      {
+        "title": "Observabilidad",
+        "desc": "Logs estructurados, métricas cardinalidad‑amigable, trazas distribuidas, SLOs y error budgets."
+      },
+      {
+        "title": "Sagas",
+        "desc": "Coordinación de transacciones distribuidas con coreografías u orquestadores."
+      }
+    ],
+    "habilidades": [
+      "Modelar dominios",
+      "Diseñar APIs",
+      "Tolerancia a fallos",
+      "SRE"
+    ],
+    "recursos": [
+      {
+        "titulo": "12-Factor App",
+        "url": "https://12factor.net/"
+      }
+    ],
+    "modules": [
+      {
+        "titulo": "Patrones de resiliencia",
+        "objetivos": [
+          "Retries",
+          "Circuit Breaker"
+        ],
+        "leccion": "Evita fallos en cascada.",
+        "ejemplosCodigo": [
+          {
+            "lenguaje": "typescript",
+            "codigo": "// pseudo Circuit Breaker"
+          }
+        ],
+        "practicas": [
+          "Simula fallas y tunea el umbral"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "prompt": "¿Qué evita fallos en cascada?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Circuit Breaker",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Singleton",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Adapter",
+            "correct": false
+          }
+        ],
+        "explanation": "Circuit Breaker corta llamadas cuando el servicio está inestable."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "bi-analitica",
+    "nombre": "BI & Analítica",
+    "area": "BI & Analítica",
+    "nivel": "Intermedio",
+    "descripcion": "Modelado dimensional, ETL y dashboards.",
+    "contenidos": [
+      "Kimball vs Inmon",
+      "Star Schema",
+      "DAX",
+      "ETL",
+      "Data Governance"
+    ],
+    "contentDetails": [
+      {
+        "title": "Kimball vs Inmon",
+        "desc": "Bottom-up vs top-down; data marts vs EDW."
+      },
+      {
+        "title": "Star Schema",
+        "desc": "Hechos granulares, dimensiones conformadas y jerarquías de tiempo/producto."
+      },
+      {
+        "title": "DAX",
+        "desc": "Medidas robustas, columnas calculadas y manejo explícito del contexto de filtro."
+      },
+      {
+        "title": "ETL",
+        "desc": "Extracción, transformación y carga con SLAs y controles de calidad de datos."
+      },
+      {
+        "title": "Data Governance",
+        "desc": "Propiedad y stewardship, linaje, políticas, seguridad y cumplimiento."
+      }
+    ],
+    "habilidades": [
+      "Modelar hechos/dimensiones",
+      "KPIs",
+      "Power BI",
+      "Data pipelines"
+    ],
+    "recursos": [
+      {
+        "titulo": "Kimball Group",
+        "url": "https://www.kimballgroup.com/"
+      }
+    ],
+    "modules": [
+      {
+        "titulo": "Modelado Dimensional",
+        "objetivos": [
+          "Hechos/Dimensiones"
+        ],
+        "leccion": "Diseña un Data Mart de Ventas.",
+        "ejemplosCodigo": [
+          {
+            "lenguaje": "sql",
+            "codigo": "-- ejemplo de tabla de hechos ventas(id_fecha,id_producto,id_cliente,importe)"
+          }
+        ],
+        "practicas": [
+          "Construye Star Schema básico"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "prompt": "¿Qué es una tabla de hechos?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una dimensión temporal",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Tabla central de métricas/medidas",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Un índice",
+            "correct": false
+          }
+        ],
+        "explanation": "La tabla de hechos almacena métricas vinculadas a dimensiones."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "desarrollo-web",
+    "nombre": "Desarrollo Web",
+    "area": "Desarrollo Web",
+    "nivel": "Básico",
+    "descripcion": "Front y back modernos, accesibilidad y performance.",
+    "contenidos": [
+      "HTML5/CSS3/ESNext",
+      "React",
+      "APIs REST",
+      "Pruebas",
+      "Accesibilidad"
+    ],
+    "contentDetails": [
+      {
+        "title": "HTML5/CSS3/ESNext",
+        "desc": "Semántica, flex/grid, accesibilidad básica y features modernas de JavaScript."
+      },
+      {
+        "title": "React",
+        "desc": "Componentes y hooks, estado global, router y patrones de optimización de render."
+      },
+      {
+        "title": "APIs REST",
+        "desc": "Diseño y versionado, autenticación/autorización, paginación, cache y manejo de errores."
+      },
+      {
+        "title": "Pruebas",
+        "desc": "Unitarias, integración y e2e con pirámide de pruebas y cobertura útil."
+      },
+      {
+        "title": "Accesibilidad",
+        "desc": "Atributos ARIA, navegación por teclado, contraste, foco visible y lectores de pantalla."
+      }
+    ],
+    "habilidades": [
+      "Maquetación",
+      "Estado en React",
+      "Fetch/HTTP",
+      "Testing",
+      "A11y"
+    ],
+    "recursos": [
+      {
+        "titulo": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/"
+      }
+    ],
+    "modules": [
+      {
+        "titulo": "Accesibilidad Web",
+        "objetivos": [
+          "Semántica",
+          "ARIA"
+        ],
+        "leccion": "Buenas prácticas de A11y.",
+        "ejemplosCodigo": [
+          {
+            "lenguaje": "html",
+            "codigo": "<button aria-label=\"Abrir menú\">☰</button>"
+          }
+        ],
+        "practicas": [
+          "Pasa lighthouse a >90 en A11y"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "prompt": "¿Qué atributo mejora accesibilidad en botones icónicos?",
+        "options": [
+          {
+            "id": "a",
+            "text": "style",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "aria-label",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "hidden",
+            "correct": false
+          }
+        ],
+        "explanation": "El aria-label describe la acción del botón."
+      }
+    ]
+  }
+]
