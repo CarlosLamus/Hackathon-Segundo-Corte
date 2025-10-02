@@ -1,4 +1,4 @@
-# Portal Ingeniería — Líneas de Profundización (Fullstack)
+# Portal Ingeniería
 
 **Frontend:** React + TypeScript + Bootstrap 5 + React Router  
 **Backend:** Node + Express + TypeScript + JWT/bcrypt
